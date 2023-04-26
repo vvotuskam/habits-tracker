@@ -5,12 +5,12 @@ server:
 
 spring:
   datasource:
-    password: webuser
+    password: postgres
     url: jdbc:postgresql://localhost:5432/registration
     username: postgres
   jpa:
-#    hibernate:
-#      ddl-auto: create
+    hibernate:
+      ddl-auto: create
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
@@ -19,8 +19,8 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: testemailsender726@gmail.com
-    password: 
+    username:
+    password:
 
     properties:
       mail:
